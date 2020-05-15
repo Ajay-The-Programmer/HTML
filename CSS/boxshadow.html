@@ -2,13 +2,27 @@
 <html>
 <head>
 <style>
-div{
-			width: 400px;
-			height:400px;
+#box1{
+			width: 200px;
+			height:200px;
 			background-color: lightblue;
-			margin-left: 400px;
-			box-shadow: 6px 6px black;
+			box-shadow: 6px 6px gray;
 }
+#box2{
+			width: 200px;
+			height:200px;
+			background-color: lightblue;
+			box-shadow: 6px 6px 5px #666;<!-- 5 pixel blur -->
+}
+#box3{
+			width: 200px;
+			height:200px;
+			background-color: lightblue;
+			box-shadow: 6px 6px black;
+			box-shadow: 6px 6px 5px 10px #666; <!-- 5px blur, 10px spread  -->
+}
+
+
 h1{
 		text-align: center;
 		color: darkgreen;
@@ -17,6 +31,9 @@ h1{
 </style>
 </head>
 <body>
-<div><h1> Properties of  box  Shadow </h1></div>
+	<h1>Properties of box shadow</h1>
+<div id="box1"><h1> box  Shadow </h1></div>
+<div id="box2"><h1> box  Shadow </h1></div>
+<div id="box3"><h1> box  Shadow </h1></div>
 </body>
 </html>
