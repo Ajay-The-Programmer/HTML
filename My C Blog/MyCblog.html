@@ -7,37 +7,20 @@
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script type="text/javascript">
-		function historyFunction(x) {
-
-			if (x == 'YouTube') {
-				alert("Our YouTube channel is comming soon, Sorry");
-			}
-			else {
-				alert(x + " Tutorial is uploading soon, Sorry");
-			}
-		}
-	</script>
 
 	<style>
 		body {
 			margin-left: 15%;
 			margin-right: 15%;
-			border-color;
-			black;
-
-
+			border-color: black;
 		}
-
 		.history {
 			background: #F44336;
 			color: #FFFFFF;
 			height: 80px;
 			text-align: center;
 			padding-top: 1px;
-
 		}
-
 		li a.active {
 			background-color: #4CAF50;
 
@@ -58,7 +41,7 @@
 
 		li a {
 			padding: 7px;
-		                            	margin-left: 4%;
+			margin-left: 4%;
 			text-decoration: none;
 			color: white;
 			float: left;
@@ -115,7 +98,7 @@
 		}
 
 		#defination {
-			font-size: 19px;
+			font-size: 20px;
 			text-align: justify;
 
 
@@ -123,6 +106,8 @@
 
 		p {
 			font-size: 19px;
+			text-align: justify;
+
 		}
 
 		.button {
@@ -152,6 +137,11 @@
 			background-color: ;
 		}
 
+		.olist {
+
+			list-style-type: square;
+		}
+
 		#content {
 
 			border-left: 5px red solid;
@@ -164,10 +154,29 @@
 
 		}
 
-		pre {
+		.programs {
 
 			border: 3px gray solid;
 			padding: 3%;
+			text-align: left;
+		}
+
+		table,
+		td,
+		th {
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+			border-collapse: collapse;
+			font-size: 20px;
+			height: 50px;
+			width: 800px;
+			text-align: center;
+
+		}
+
+		table {
+			border: 2px solid gray;
+			margin-left: 30px;
 		}
 
 		div.youtube {
@@ -195,16 +204,15 @@
 	<div class="history">
 		<h1>History Of Languages</h1>
 	</div>
-
 	<div class="minu">
 		<ul>
 			<li><a href="https://www.youtube.com/watch?v=4nZg1XMMxWk&list=PLVlQHNRLflP8unkTii_FNKDfow3H5C6RL&index=9"
-					style="target:_blank">C</a></li>
+					style="target_blank">C</a></li>
 			<li><a href="" onclick="historyFunction('C++')">C++</a></li>
 			<li><a href="" onclick="historyFunction('JavaScript')">JavaScript</a></li>
 			<li><a href="" onclick="historyFunction('Java')">Java</a></li>
 			<li><a href="" onclick="historyFunction('HTML')">HTML</a></li>
-			<li><a href="" onclick="historyFunction('CSS')">CSS</a></li>
+			<li><a href="" onclick="historyFunction(' CSS')">CSS</a></li>
 			<li><a href="" onclick="historyFunction('YouTube')">YouTube</img></a></li>
 			<li><a class="about" href="">About</a></li>
 		</ul>
@@ -219,10 +227,11 @@
 		</div>
 		<h2><b>Dennis MacAlistair Ritchie (September 9, 1941 – c. October 12, 2011) :</b></h2>
 		<br />
-		<div class="image"><img class="img1" src="/home/ajay/HTMLandCSS/My C Blog/images/dennis_ritchie.jpg"
-				title="Dennis Ritchie"><img class="img1" src="/home/ajay/HTMLandCSS/My C Blog/images/denis ritchi.jpeg"
-				title="Dennis Ritchie"><br /><br /><img class="img2"
-				src="/home/ajay/HTMLandCSS/My C Blog/images/denis.jpg" title="Dennis Ritchie"></div>
+		<div class="image"><img class="img1" src="/home/ajaydevkar/HTMLandCSS/My C Blog/images/dennis_ritchie.jpg"
+				title="Dennis Ritchie">
+			<img class="img1" src="/home/ajaydevkar/HTMLandCSS/My C Blog/images/denis ritchi.jpeg"
+				title="Dennis Ritchie"><br /><br />
+			<img class="img2" src="/home/ajaydevkar/HTMLandCSS/My C Blog/images/denis.jpg" title="Dennis Ritchie"></div>
 		<br />
 		<div>
 			<br />
@@ -232,7 +241,7 @@
 
 
 			<div id="tuto">
-				<h1 class="highlighter"><b>&nbsp;C TUTORIAL FOR BIGINNERS</b></i></h1>
+				<h1 class="highlighter"><b>&nbsp;BASIC C TUTORIAL FOR BIGINNERS</b></i></h1>
 				<h2 class="highlighter">&nbsp; Easy to Learn</h2>
 			</div>
 			<br />
@@ -245,12 +254,12 @@
 				Laboratories to Develop the Unix Operating System in the early 1970s.
 				Ranked among the most widely used languages, C has a compiler for most computer systems and has
 				influenced many popular languages, Java programming language
-				is also equally popular and most widely used among modern software programmers.</p>
+				is also equally popular and most widely used among modern software programmers.
+			</p>
 			<br />
 			<h3><b>I'm going to show you basic syntax of C Programming with Hello World Program.</b></h3>
 
-			<pre>
-
+			<pre class="programs">
 #include < stdio.h >
 int main() 
 {    
@@ -258,124 +267,289 @@ int main()
    
    return 0;
 
-}</pre>
+}
+</pre>
 			<h3><b>
 					OutPut
 				</b></h3>
-			<pre>
+			<pre class="programs">
 Hello World
 </pre>
 			<br />
 
-			<h2 id="content">Pointer </h2>
+			<h2 id="content"> Introduction </h2>
 
-			<p id="defination"> is a high-level and general-purpose programming language that is ideal for developing
+			<p id="defination">
+			</p>
+			<ol class="olist">
+				<li>
+					<h3>C Data Type :</h3>
+				</li>
+				<p>
+
+					C language has some predefined set of data types to handle various kinds of data that we can use
+					in our program.<br />
+					Data type of variable gives two kind of information of variable data.<br />
+
+					What is the size of data?<br />
+					What is the type of data?<br />
+					<br />
+					It helps compiler to reserve memory for variable and how to read and write them.<br />
+					<br />
+					C language supports 2 different type of data types:<br />
+					<br />
+					Primary data types:<br />
+					These are fundamental data types in C namely integer(int), float(float),
+					character(char) and void.<br />
+					<br />
+					Derived data types:<br />
+					Derived data types are nothing but primary datatypes but a little twisted or grouped together
+					like array, stucture, union and pointer. These are discussed in detai ls later.
+				</p>
+
+				<li>
+					<h3>Variable & Constant :</h3>
+				</li>
+				<p>Variable : A variable is a named memory location which temporarily stores data that can change while
+					the program is running.<br /><br />
+					Constant :
+				</p>
+
+				<li>
+					<h3>Keyword and Identifier :</h3>
+					<p>
+						<b>Keyword</b> : reserved words in C programming that are part of the syntax. Keywords are part
+						of the syntax and they cannot be used as an identifier<br />
+
+					</p>
+					<table>
+						<tr>
+							<th colspan="4"> C Keywords</th>
+						</tr>
+						<tr>
+							<td>int</td>
+							<td>char</td>
+							<td>float</td>
+							<td>double</td>
+
+						</tr>
+						<tr>
+
+							<td>void</td>
+							<td>const</td>
+							<td>short</td>
+							<td>long</td>
+						</tr>
+
+						<tr>
+							<td>signed</td>
+							<td>unsigned</td>
+							<td>auto</td>
+							<td>struct</td>
+
+						</tr>
+						<tr>
+
+							<td>register</td>
+							<td>typedef</td>
+							<td>return</td>
+							<td>union</td>
+						</tr>
+
+						<tr>
+							<td>switch</td>
+							<td>break</td>
+							<td>case</td>
+							<td>for</td>
+
+						</tr>
+
+						<tr>
+							<td>if</td>
+							<td>else</td>
+							<td>do</td>
+							<td>while</td>
+
+						</tr>
+
+						<tr>
+							<td>default</td>
+							<td>goto</td>
+							<td>sizeof</td>
+							<td>volatile</td>
+
+						</tr>
+
+						<tr>
+							<td>continue</td>
+							<td> enum</td>
+							<td>static</td>
+							<td>extern</td>
+
+						</tr>
+
+
+					</table>
+					<p>example :</p>
+					<pre class="programs">
+int age ;
+</pre>
+					<p>Here, <u style="background-color: yellow ">int</u> is keywords.<br /><br />
+					<p><b>Identifier</b> : The name of a variable is known as its identifier.</p>
+
+					<pre class="programs">
+int age ;
+float calculation;
+</pre>
+					<p>Here, <u style="background-color: yellow ">age</u> and <u
+							style="background-color:yellow">calculation</u> are identifiers.
+						<br />
+						keep remember, identifier names must be different from keywords. You cannot use float as an
+						identifier because float is a keyword.
+					</p>
+
+				</li>
+				<li>
+					<h3>C Input Output :</h3>
+				</li>
+				<table>
+					<tr>
+						<th colspan="4">Formatted Functions</th>
+					</tr>
+					<tr>
+						<td>Type</td>
+						<td>Input</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>char</td>
+						<td>scanf()</td>
+						<td>print()</td>
+					</tr>
+					<tr>
+						<td>int</td>
+						<td>scanf()</td>
+						<td>print()</td>
+
+					</tr>
+					<tr>
+						<td>float</td>
+						<td>scanf()</td>
+						<td>print()</td>
+					</tr>
+					<tr>
+						<td>string</td>
+						<td>scanf()</td>
+						<td>print()</td>
+					</tr>
+				</table>
+				<br />
+				<table>
+					<tr>
+						<th colspan="4">Formatted Functions</th>
+					</tr>
+					<tr>
+						<td>Type</td>
+						<td>Input</td>
+						<td>Output</td>
+					</tr>
+					<tr>
+						<td>char</td>
+						<td>getch()<br />getche()<br />getchar</td>
+						<td>putch()<br />putchar()</td>
+					</tr>
+					<tr>
+						<td>int</td>
+						<td>--</td>
+						<td>--</td>
+					</tr>
+					<tr>
+						<td>float</td>
+						<td>--</td>
+						<td>--</td>
+					</tr>
+					<tr>
+						<td>string</td>
+						<td>gets()</td>
+						<td>puts()</td>
+					</tr>
+				</table>
+
+				<p><b>OutPut:</b>There are different library functions to read data entered by keyboard. e.g scanf(),
+					getchar(), getc()
+					Normally scanf() is used to display data on screen.
+					<br />
+					scanf() function to take input from the user, <br />
+					,and scanf is input function. For using I/O
+					functionality,
+					programmers must include <b>Standard input output< stdio></b> header file within the program.
+					<br />
+					<b>InPut</b>
+					and printf() function to display output to the
+					user. In C programming you can use scanf() and printf() predefined function to read and print data,
+					printf() is one of the main output function.
+
+				</p>
+				<pre class="programs">
+#include< stdio.h>
+void main()
+{
+	int age;
+	printf("Please enter your age);
+	scanf("%d, &age);
+	printf("Your Age is : %d", age );
+}
+</pre>
+
+				<h3><b>OutPut</b></h3>
+				<pre class="programs">
+Your Age is 23
+</pre>
+
+				<li>
+					<h3>C Operators :</h3>
+				</li>
+				<p>An operator is a symbol that operates on a value or a variable.</p>
+			</ol>
+			<br />
+
+			<h2 id="content">Flow Control </h2>
+
+			<p id="defination">C is a high-level and general-purpose programming language that is ideal for
+				developing
 				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
+				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for
+				the
 				Unix Operating System in the early 1970s.
 				Ranked among the most widely used languages, C has a compiler for most computer systems and has
 				influenced many popular languages – notably C++.
 			</p><br />
 
-			<h2 id="content">Array </h2>
+			<h2 id="content">Functions </h2>
 
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
+			<p id="defination">C is a high-level and general-purpose programming language that is ideal for
+				developing
 				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
+				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for
+				the
 				Unix Operating System in the early 1970s.
 				Ranked among the most widely used languages, C has a compiler for most computer systems and has
 				influenced many popular languages – notably C++.
 			</p><br />
 
-			<h2 id="content">Data Type </h2>
+			<h2 id="content">Arrays </h2>
 
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
+			<p id="defination">C is a high-level and general-purpose programming language that is ideal for
+				developing
 				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
+				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for
+				the
 				Unix Operating System in the early 1970s.
 				Ranked among the most widely used languages, C has a compiler for most computer systems and has
 				influenced many popular languages – notably C++.
 			</p><br />
 
-			<h2 id="content">Function</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">String</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Structures</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Recursion</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Handling Multiple String</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Decision Control Instruction</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Loop Control Instruction</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
-
-			<h2 id="content">Index</h2>
-
-			<p id="defination">C is a high-level and general-purpose programming language that is ideal for developing
-				firmware or portable applications.
-				Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the
-				Unix Operating System in the early 1970s.
-				Ranked among the most widely used languages, C has a compiler for most computer systems and has
-				influenced many popular languages – notably C++.
-			</p><br />
+			<<br />
 		</div>
 
 
@@ -403,6 +577,18 @@ Hello World
 	(Get Link )
 
 	</div>
+	<script type="text/javascript">
+		function historyFunction(x) {
+
+			if (x == 'YouTube') {
+				alert("Our YouTube channel is comming soon, Sorry");
+			}
+			else {
+				alert(x + " Tutorial is uploading soon, Sorry");
+			}
+		}
+
+	</script>
 </body>
 
 </html>
