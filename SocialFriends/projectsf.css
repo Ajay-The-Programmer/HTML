@@ -1,0 +1,285 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.header {
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px gray solid;
+    background-color: royalblue;
+    line-height: 50px;
+    position: fixed;
+}
+
+div h1 {
+    color: white;
+    text-shadow: 2px 7px black;
+    font-size: 42px;
+    margin-left: 5px;
+    width: 16%;
+    margin-top: 7px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 60px;
+    border: 3px solid black;
+}
+
+.search {
+    height: 70px;
+    width: 40%;
+    display: inline-block;
+    margin-left: 295px;
+    margin-top: 7px;
+}
+
+.search input {
+    height: 45px;
+    width: 100%;
+    text-indent: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-top: 12px;
+    outline: none;
+}
+
+.main {
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    margin-top: 85px;
+}
+
+.leftnevigation {
+    height: 80%;
+    margin-top: 40px;
+    width: 350px;
+    float: left;
+    display: inline-block;
+    overflow: auto;
+    position: fixed;
+    padding-right: 25px;
+}
+
+a:hover,
+a:active {
+    font-size: 28px;
+    box-shadow: 1px 5px black;
+}
+
+
+/* .home,
+.profile,
+.photos,
+.friends,
+.yourPost,
+.savedPost,
+.likeByYou,
+.massenger :hover {
+    font-size: 22px;
+} */
+
+.profile {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.home {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 71%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.photos {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 67%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.friends {
+    width: 50%;
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.yourPost {
+    width: 50%;
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 59%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.savedPost {
+    width: 50%;
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 52%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.likeByYou {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 53%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.massenger {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 30px;
+    line-height: 100px;
+    text-decoration: none;
+    padding-right: 52%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 5px solid black;
+}
+
+.storymain {
+    height: auto;
+    width: 38%;
+    margin-left: 490px;
+    border-radius: 13px;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-top: 60px;
+    display: inline-block;
+    position: none;
+}
+
+.storypost {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+}
+
+.storypost b {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    font-size: 19.60px;
+}
+
+.p {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 19.40px;
+}
+
+.buttons {
+    border-top: 2px solid lightgray;
+    padding: 10px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid lightgray;
+}
+
+.button1 {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    float: left;
+}
+
+.button2 {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    float: right;
+}
+
+.like1 {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-indent: 6px;
+    font-size: 18px;
+}
+
+.comment1 {
+    float: right;
+    margin-right: 7px;
+    font-size: 18px;
+}
+
+.typecomment {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 18px;
+    text-indent: 10px;
+    margin-left: 18px;
+    outline: none;
+}
+
+.comment2 {
+    padding: 15px;
+    height: auto;
+    width: 200px;
+    font-size: 19px;
+    background-color: lightgray;
+    border-radius: 20px;
+    text-indent: 20px;
+}
+
+.cmntsubmitbutton {
+    font-size: 14px;
+    width: 90px;
+    height: 40px;
+}

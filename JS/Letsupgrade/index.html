@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CRUD Application</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .data {
+            height: 500px;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: rgb(151, 144, 144);
+        }
+
+        .table {
+            margin-top: 20px;
+            width: 100%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        th,
+        td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .submit,
+        input {
+            width: 180px;
+            height: 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="data">
+        <h1>Superheroes</h1>
+        <div class="form">
+            <form onsubmit="addSuperhero(event)"">
+                <input type=" text" id="name" required placeholder="Name" />
+            <input type="number" id="age" required placeholder="Age" />
+            <input type="text" id="planet" required placeholder="Planet" />
+            <input type="text" id="height" required placeholder="Height" />
+            <button type="submit" class="submit">Add Superheroes</button>
+            </form>
+        </div>
+        <br />
+        <div class="form">
+            <form>
+                <input type="text" id="searchName" onkeyup="searchByName()" placeholder="Start searching here" />
+            </form>
+        </div>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+                <th>Sr no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="tdata"></tbody>
+        </table>
+    </div>
+
+    <script src="project1.js"></script>
+</body>
+
+</html>
