@@ -464,18 +464,20 @@ int main()
             }
         }
 
+        // x.style.display = "none";
+
         function showcontent() {
 
 
             let x = document.getElementsByClassName("cprogramming")[0]
 
-            console.log(x);
+            console.log(x.style.display);
             if (x.style.display === "none") {
 
 
                 x.style.display = "block ";
             } else {
-                x.style.display = "none "
+                x.style.display = "none ";
             }
         }
     </script>
