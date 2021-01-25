@@ -105,7 +105,6 @@ function display(friendlist) {
 function writecommets(event, index) {
     event.preventDefault();
     let frndlist = friendlist[index];
-    console.log(index);
     cnt[index] += document.getElementsByClassName("typecomment")[index].value;
     frndlist.totalComment += 1;
     display(friendlist);

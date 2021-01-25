@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchAPI</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .container-fluid {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .row {
+        height: 600px;
+        /* background-color: blue; */
+        background-image: url("/home/ajaydevkar/HdImages/weather.jpg");
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-12 text-center mt-5">
+
+                <input type="text" id="citySearch" class="">
+                <button id="mybtn"> Find Weather</button>
+                <div id="info" class="mt-5">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("mybtn").onclick = () => {
+            let city = document.getElementById("citySearch").value;
+            let api = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=05c7bcab5edc38932a64967fbd1a1224`).then(data => {
+
+                return data.json();
+            }).then(data2 => {
+
+                document.getElementById("info").innerHTML = `
+                <ul>
+                        <li> City Name: ${data2.name}</li> 
+                        <li>Temp: ${data2.main.temp}c </li>
+                        <li>Description: ${data2.weather[0].description} </li>
+                    
+                </ul>`
+
+            })
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
