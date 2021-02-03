@@ -7,6 +7,8 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cblog.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
 </head>
@@ -52,7 +54,7 @@
             </div>
             <br />
             <br />
-            <h2 id="content" style="" onclick="showcontent()"> C-Programming</h2>
+            <h2 class="content"> C-Programming</h2>
             <div class="cprogramming">
 
                 <p id="defination"><b> C programming</b> is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software, C was developed by Dennis Ritchie at Bell Telephone
@@ -81,8 +83,8 @@ Hello World
             </div>
             <br />
 
-            <h2 id="content"> Introduction </h2>
-            <div id="cprogramming">
+            <h2 class="content"> Introduction </h2>
+            <div class="cprogramming">
 
                 <p id="defination">
                 </p>
@@ -454,33 +456,7 @@ int main()
     Best Books For Improving skills in C Language C Programming Absolute Beginner's Guide (Get Link) The C Programming Language (2nd Edition) (Get Link) Head First C (Get Link ) Let Us C (Get Link) The Complete Reference (Get Link )
 
     </div>
-    <script type="text/javascript ">
-        function historyFunction(x) {
-
-            if (x == 'YouTube') {
-                alert("Our YouTube channel is comming soon, Sorry ");
-            } else {
-                alert(x + " Tutorial is uploading soon, Sorry ");
-            }
-        }
-
-        // x.style.display = "none";
-
-        function showcontent() {
-
-
-            let x = document.getElementsByClassName("cprogramming")[0]
-
-            console.log(x.style.display);
-            if (x.style.display === "none") {
-
-
-                x.style.display = "block ";
-            } else {
-                x.style.display = "none ";
-            }
-        }
-    </script>
+    <script src="cblog.js"></script>
 </body>
 
 </html>
